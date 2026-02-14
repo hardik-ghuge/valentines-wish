@@ -1,0 +1,26 @@
+/* Password Box */
+.login-box {
+    margin-top: 150px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    text-align: center;
+}
+
+/* Floating Hearts */
+.heart {
+    position: fixed;
+    bottom: -10px;
+    font-size: 24px;
+    animation: floatUp linear forwards;
+}
+
+@keyframes floatUp {
+    to {
+        transform: translateY(-110vh);
+        opacity: 0;
+    }
+}
