@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Private For My Love ❤️</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="login-box">
+    <h1>Enter Password (The Day We Got Together in DD/MM/YYYY format) 💌</h1>
+    <input type="password" id="password" placeholder="Hint: Our special date">
+    <br><br>
+    <button onclick="checkPassword()">Unlock ❤️</button>
+    <p id="error"></p>
+</div>
+
+<script>
+function checkPassword() {
+    var pass = document.getElementById("password").value;
+    
+    if(pass === "19/08/2023") {   // CHANGE THIS PASSWORD
+        window.location.href = "home.html";
+    } else {
+        document.getElementById("error").innerText = "Wrong password baby 😜 Try again!";
+    }
+}
+</script>
+
+</body>
+</html>
